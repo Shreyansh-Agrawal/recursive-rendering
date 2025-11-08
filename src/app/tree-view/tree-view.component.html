@@ -1,0 +1,10 @@
+<ul>
+    <li>
+        - {{ root }}
+        <ul *ngIf="hasChildren(root)">
+            <ng-container *ngFor="let child of getChildren(root)">
+                <app-tree-view [tree]="tree" [root]="child"></app-tree-view>
+            </ng-container>
+        </ul>
+    </li>
+</ul>

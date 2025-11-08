@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-app';
+  tree = {
+    "a": ["b", "c"],
+    "b": ["d", "e"],
+    "c": ["f", "g"],
+    "e": ["h", "i"],
+    "f": ["j", "k"]
+  };
+
+  root = 'a'
 }
